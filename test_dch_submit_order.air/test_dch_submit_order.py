@@ -9,7 +9,7 @@ poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=Fa
 
 auto_setup(__file__)
 poco(text="订单").click()
-poco.swipe([0.5,0.8],[0.5,0,2])
+poco.swipe([0.5,0.8],[0.5,0.15])
 poco("com.iris.dch.itask:id/tv_input_jine").click()
 text("15700")
 poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
