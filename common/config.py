@@ -20,8 +20,15 @@ def get_id_card():
     id_card = str(random.randint(100000000000000000,999999999999999999))
     #print(id_card)
     return id_card
+def storage_information(custom_name=None,custom_mobile=None):
+    custom_name = custom_name
+    custom_mobile = custom_mobile
+    return custom_name,custom_mobile
+
 
 # if __name__ == '__main__':
-#     #get_coustom_name()
+#     cus = get_coustom_name()
 #     #get_coustom_mobile()
-#     get_id_card()
+#     #get_id_card()
+#     si = storage_information(custom_name=cus,custom_mobile='454534')
+#     print(si)

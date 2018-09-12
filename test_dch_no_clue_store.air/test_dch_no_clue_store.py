@@ -8,7 +8,9 @@ poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=Fa
 
 auto_setup(__file__)
 poco(text="未进").click()
-poco("com.iris.dch.itask:id/listview").child("android.widget.FrameLayout")[1].child("com.iris.dch.itask:id/ll_item_bg").child("android.widget.RelativeLayout").child("com.iris.dch.itask:id/ll_cus_info").click()
+custom_name = config.get_pickle_info("custom_name")
+poco(text=custom_name).click()
+#poco("com.iris.dch.itask:id/listview").child("android.widget.FrameLayout")[0].child("com.iris.dch.itask:id/ll_item_bg").child("android.widget.RelativeLayout").child("com.iris.dch.itask:id/ll_cus_info").click()
 poco(text="销售平台").click()
 txt1 = ''
 try:
