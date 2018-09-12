@@ -4,7 +4,7 @@ __author__ = "chenwt"
 from airtest.core.api import *
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
-from common import config
+from dch_common import config
 auto_setup(__file__)
 
 start_app("com.iris.dch.itask")
