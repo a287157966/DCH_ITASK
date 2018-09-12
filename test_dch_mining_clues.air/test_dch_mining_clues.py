@@ -9,12 +9,10 @@ poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=Fa
 auto_setup(__file__)
 poco("com.iris.dch.itask:id/fragment_btm_bt").child("android.widget.LinearLayout").child("android.widget.RelativeLayout")[2].child("android.widget.TextView").click()
 poco(text="挖掘").click()
-sleep(10)
-poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
+poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[3].click()
+
 #touch(Template(r"tpl1536574335547.png", record_pos=(0.433, -0.756), resolution=(1440, 2560)))
 #touch([1360.5, 171.8])
-
-
 
 poco("com.iris.dch.itask:id/et_recommended_name").click()
 #text("qwe")
@@ -35,6 +33,9 @@ poco("com.iris.dch.itask:id/bt_recommended_level").click()
 poco(text="A:一周内订单").click()
 poco("com.iris.dch.itask:id/bt_confirm").click()
 sleep(3)
+
+
+
 
 
 

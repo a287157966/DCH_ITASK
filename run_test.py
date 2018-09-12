@@ -23,7 +23,8 @@ def run_test(testcase=[],*devices):
         for case in testcase:
             base_path = get_path()
             test_case = os.path.join(base_path,case)
-            report_path = os.path.join(base_path,'report')
+            report_path = "D:\\apache-tomcat-8.5.33\\webapps\\DCH_Report" #定义Tomcat路径
+            #report_path = os.path.join(base_path,'report') #获取本地测试报告路径,发送邮件时不适用
             case_name = case.split('.')[0]
             report_name = case_name+'_report'
             outfile = os.path.join(report_path,case_name) + '.html'
@@ -34,21 +35,23 @@ def run_test(testcase=[],*devices):
             os.system(implement_case)
             os.system(implement_report)
             time.sleep(5)
-            url = "file:///"+outfile
-            respone = urllib.request.urlopen(url)
+            send_url = "http://192.168.13.56:8080"+outfile.split("webapps")[-1]
+            open_url = "file:///"+outfile
+            #print(open_url)
+            respone = urllib.request.urlopen(open_url)
             respone_txt = respone.read().decode('utf-8')
             sigin = 'Null'
             if 'Passed' in respone_txt:
                 sigin = 'Pass'
-                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:green;">%s</span></td></tr>' %(case_name,url,report_name,sigin)
+                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:green;">%s</span></td></tr>' %(case_name,send_url,report_name,sigin)
                 body_html += tb_html
             elif 'Failed' in respone_txt:
                 sigin = 'Failed'
-                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:red;">%s</span></td></tr>' %(case_name,url,report_name,sigin)
+                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:red;">%s</span></td></tr>' %(case_name,send_url,report_name,sigin)
                 body_html += tb_html
                 failed_case += 1
             else:
-                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:yellow;">%s</span></td></tr>' %(case_name,outfile,report_name,sigin)
+                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:yellow;">%s</span></td></tr>' %(case_name,send_url,report_name,sigin)
                 body_html += tb_html
 
     success_rate = str('%.2f'%(((float(count_case)-float(failed_case))/float(count_case))*100))+'%'
@@ -60,6 +63,10 @@ def run_test(testcase=[],*devices):
 
 #获取测试报告文件
 def get_report_file():
+    '''
+    寻找测试报告方法，用来构建邮件附件所用
+    目前报告直接以邮件html形式发送暂时不用该方法
+    '''
     base_path = get_path()
     report_list = []
     report_path = os.path.join(base_path,'report')
@@ -107,7 +114,7 @@ def get_html(title_data,content):
 		<center>
 			<div style="float:left;">
 				<span style="float:left;">大家好:</span><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>利星行I_Task_APP测试报告，详情如下：</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>大昌行I_Task_APP测试报告，详情如下：</span>
 			</div>
 			<center><br><br><br>
 				<h1>APP自动化测试报告</h1>
@@ -138,7 +145,7 @@ def send_email(text):
     report_list = get_report_file()
     mail_host = 'smtp.hostuc.com'
     sender = 'wentao.chen@iris-technologies.com.cn'
-    receivers = ['wentao.chen@iris-technologies.com.cn']
+    receivers = ['wentao.chen@iris-technologies.com.cn','zhiyi.you@iris-technologies.com.cn']
     username = 'wentao.chen@iris-technologies.com.cn'
     password = 'iris123'
     mail_port = 25
@@ -175,10 +182,10 @@ if __name__ == "__main__":
 
     #print(get_path())
     testcase = ['test_dch_login.air','test_dch_mining_clues.air','test_dch_no_clue_store.air','test_dch_finance.air',
-                'test_dch_insurance.air','test_dch_submit_order.air']
+               'test_dch_insurance.air','test_dch_submit_order.air']
     #testcase = ['test_dch_mining_clues.air']
-    run_test(testcase,"10160a6dbb9a4002")
-    # tit_html,bd_html = run_test(testcase,"JTJ4C15C15014538")
-    # text = get_html(tit_html,bd_html)
-    # send_email(text)
+    #run_test(testcase,"4ae4ee5f")
+    tit_html,bd_html = run_test(testcase,"4ae4ee5f")
+    text = get_html(tit_html,bd_html)
+    send_email(text)
 

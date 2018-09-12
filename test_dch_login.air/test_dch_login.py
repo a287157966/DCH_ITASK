@@ -19,9 +19,11 @@ if txt1 == '登录':
     poco("com.iris.dch.itask:id/et_login_user").click()
     #text("auto_test")
     text(config.login_user())
-    poco("com.iris.dch.itask:id/et_login_psw").click()
+    poco("com.iris.dch.itask:id/et_login_psw").set_text(config.login_pwd())
     #text("111111")
-    text(config.login_pwd())
+    #不同手机要用set_text 和 text() 两个方法来实现，坑爹啊
+    #text(config.login_pwd())
+    keyevent("Enter")
     poco("com.iris.dch.itask:id/btn_login").click()
     sleep(3)
     txt2 = poco(text="时间").get_text()
@@ -33,13 +35,15 @@ else:
     poco("com.iris.dch.itask:id/et_login_user").click()
     #text("auto_test")
     text(config.login_user())
-    poco("com.iris.dch.itask:id/et_login_psw").click()
+    poco("com.iris.dch.itask:id/et_login_psw").set_text(config.login_pwd())
     #text("111111")
-    text(config.login_pwd())
+    #text(config.login_pwd())
+    keyevent("Enter")
     poco("com.iris.dch.itask:id/btn_login").click()
     sleep(3)
     txt2 = poco(text="时间").get_text()
     assert_equal(txt2,'时间','登录成功')
+
 
 
 

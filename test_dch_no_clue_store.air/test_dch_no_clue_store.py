@@ -30,11 +30,12 @@ if txt1 == '':
     text("jhssdferweirufidsf")
     poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
     #滑动展示出车辆信息按钮--由于手机分辨率问题这样有问题导致不同手机滑动不能展示出来
-    #poco.swipe([0.5, 0.8359375],[0.5, 0.145625])
+    poco.swipe([0.5, 0.8359375],[0.5, 0.145625])
     poco(text="车辆").click()
     poco(text="车辆信息").click()
     poco("com.iris.dch.itask:id/rb_intent1").click()
-    poco.swipe([0.5, 0.8359375],[0.5, 0.545625])
+    poco(text="车辆信息").click()
+    poco.swipe([0.5, 0.8359375],[0.5, 0.245625])
 else:
     poco("com.iris.dch.itask:id/tv_add").click()
     poco("com.iris.dch.itask:id/tv_id_card").click()
@@ -50,12 +51,12 @@ else:
     poco("com.iris.dch.itask:id/tv_address").click()
     text("jhssdferweirufidsf")
     poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
-    #poco.swipe([0.5, 0.8359375],[0.5, 0.145625])
+    poco.swipe([0.5, 0.8359375],[0.5, 0.145625])
     poco(text="车辆").click()
     poco(text="车辆信息").click()
     poco("com.iris.dch.itask:id/rb_intent1").click()
     poco(text="车辆信息").click()
-    poco.swipe([0.5, 0.8359375],[0.5, 0.545625])
+    poco.swipe([0.5, 0.8359375],[0.5, 0.245625])
     
     
 
