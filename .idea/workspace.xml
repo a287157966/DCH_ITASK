@@ -19,7 +19,7 @@
     <SUITE FILE_PATH="coverage/DCH_ITASK_TEST$run_test.coverage" NAME="run_test Coverage Results" MODIFIED="1536728075221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DCH_ITASK_TEST$config__1_.coverage" NAME="config (1) Coverage Results" MODIFIED="1536744473866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/python36/Lib/site-packages/dch_common" />
     <SUITE FILE_PATH="coverage/DCH_ITASK_TEST$test_dch_no_clue_store.coverage" NAME="test_dch_no_clue_store Coverage Results" MODIFIED="1536735267815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_dch_no_clue_store.air" />
-    <SUITE FILE_PATH="coverage/DCH_ITASK_TEST$test_dch_login.coverage" NAME="test_dch_login Coverage Results" MODIFIED="1536737246951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_dch_login.air" />
+    <SUITE FILE_PATH="coverage/DCH_ITASK_TEST$test_dch_login.coverage" NAME="test_dch_login Coverage Results" MODIFIED="1536749309971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_dch_login.air" />
     <SUITE FILE_PATH="coverage/DCH_ITASK_TEST$test_dch_mining_clues.coverage" NAME="test_dch_mining_clues Coverage Results" MODIFIED="1536726538157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_dch_mining_clues.air" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/test_dch_login.air/test_dch_login.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="e#47#77#0" expanded="true" />
               </folding>
@@ -47,9 +47,21 @@
         <entry file="file://D:/python36/Lib/site-packages/dch_common/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="28" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_dch_logout.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_dch_logout.air/test_dch_logout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#47#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding>
                 <element signature="e#47#77#0" expanded="true" />
               </folding>
@@ -94,8 +106,8 @@
       <file leaf-file-name="run_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53846157">
-              <caret line="187" column="52" selection-start-line="187" selection-start-column="52" selection-end-line="187" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.7692308">
+              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -131,12 +143,13 @@
         <option value="$PROJECT_DIR$/test_dch_login.air/login_config.py" />
         <option value="$PROJECT_DIR$/test_dch_login.air/common_login/login_config.py" />
         <option value="$PROJECT_DIR$/test_dch_submit_order.air/test_dch_submit_order.py" />
-        <option value="$PROJECT_DIR$/test_dch_login.air/test_dch_login.py" />
         <option value="$PROJECT_DIR$/common/config.py" />
         <option value="D:/pythonproject/Python_shell/test_pickle.py" />
-        <option value="D:/python36/Lib/site-packages/dch_common/config.py" />
         <option value="$PROJECT_DIR$/test_dch_mining_clues.air/test_dch_mining_clues.py" />
         <option value="$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py" />
+        <option value="D:/python36/Lib/site-packages/dch_common/config.py" />
+        <option value="$PROJECT_DIR$/test_dch_login.air/test_dch_login.py" />
+        <option value="$PROJECT_DIR$/test_dch_logout.air/test_dch_logout.py" />
         <option value="$PROJECT_DIR$/run_test.py" />
       </list>
     </option>
@@ -221,7 +234,7 @@
       <recent name="C:\Users\yanchuanjie\Desktop\DCH_ITASK_TEST" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.config (1)">
+  <component name="RunManager" selected="Python.test_dch_login">
     <configuration default="false" name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -514,10 +527,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.config (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_pickle" />
-        <item index="2" class="java.lang.String" itemvalue="Python.config" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_dch_login" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_dch_login" />
+        <item index="1" class="java.lang.String" itemvalue="Python.config (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_pickle" />
+        <item index="3" class="java.lang.String" itemvalue="Python.config" />
         <item index="4" class="java.lang.String" itemvalue="Python.test_dch_no_clue_store" />
       </list>
     </recent_temporary>
@@ -536,7 +549,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="2" width="1938" height="1028" extended-state="0" />
+    <frame x="-10" y="2" width="1938" height="1028" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16090713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -740,40 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_dch_login.air/test_dch_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#47#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/site-packages/dch_common/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_dch_mining_clues.air/test_dch_mining_clues.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#47#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="e#47#77#0" expanded="true" />
           </folding>
@@ -790,10 +773,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="e#47#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/airtest/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/dch_common/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_dch_logout.air/test_dch_logout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_dch_login.air/test_dch_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#47#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53846157">
-          <caret line="187" column="52" selection-start-line="187" selection-start-column="52" selection-end-line="187" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.7692308">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

@@ -2,6 +2,7 @@
 __author__ = "chenwt"
 
 from airtest.core.api import *
+from dch_common import config
 
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
@@ -17,4 +18,6 @@ except BaseException as e:
     txt = ''
     print (u'未获取到元素:',e)
 assert_equal(txt,"登录","退出登录成功")
+
+config.teardown()
 
