@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.906977">
-              <caret line="188" column="37" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.2590799">
+              <caret line="147" column="56" selection-start-line="147" selection-start-column="56" selection-end-line="147" selection-end-column="56" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_dch_no_clue_store.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_dch_no_clue_store.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65375304">
+            <state vertical-scroll-proportion="-6.27907">
               <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding>
                 <element signature="e#47#77#0" expanded="true" />
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/test_dch_submit_order.air/test_dch_submit_order.py" />
         <option value="$PROJECT_DIR$/test_dch_login.air/test_dch_login.py" />
         <option value="$PROJECT_DIR$/test_dch_mining_clues.air/test_dch_mining_clues.py" />
-        <option value="$PROJECT_DIR$/run_test.py" />
         <option value="$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py" />
+        <option value="$PROJECT_DIR$/run_test.py" />
       </list>
     </option>
   </component>
@@ -554,7 +554,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="2" width="1938" height="1028" extended-state="0" />
+    <frame x="-10" y="2" width="1938" height="1028" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16090713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -759,22 +759,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_test.py">
+    <entry file="file://$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.906977">
-          <caret line="188" column="37" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
+        <state vertical-scroll-proportion="-6.27907">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#47#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_dch_no_clue_store.air/test_dch_no_clue_store.py">
+    <entry file="file://$PROJECT_DIR$/run_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65375304">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.2590799">
+          <caret line="147" column="56" selection-start-line="147" selection-start-column="56" selection-end-line="147" selection-end-column="56" />
           <folding>
-            <element signature="e#47#77#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
