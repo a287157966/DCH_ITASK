@@ -20,4 +20,9 @@ poco("com.iris.dch.itask:id/tv_input_yujikaipiaoriqi").click()
 poco("com.iris.dch.itask:id/btnSubmit").click()
 poco("com.iris.dch.itask:id/tv_tijiao").click()
 poco("com.iris.dch.itask:id/open").click()
+# 退出销售平台
+poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[0].click()
+poco("com.iris.dch.itask:id/open").click()
+
+
 

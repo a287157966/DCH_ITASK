@@ -182,7 +182,7 @@ if __name__ == "__main__":
 
     #print(get_path())
     testcase = ['test_dch_login.air','test_dch_mining_clues.air','test_dch_no_clue_store.air','test_dch_finance.air',
-               'test_dch_insurance.air','test_dch_submit_order.air']
+               'test_dch_insurance.air','test_dch_submit_order.air','test_dch_logout.air']
     #testcase = ['test_dch_mining_clues.air']
     #run_test(testcase,"4ae4ee5f")
     tit_html,bd_html = run_test(testcase,"4ae4ee5f")
