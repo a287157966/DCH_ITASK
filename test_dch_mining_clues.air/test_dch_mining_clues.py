@@ -9,6 +9,7 @@ poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=Fa
 auto_setup(__file__)
 poco("com.iris.dch.itask:id/fragment_btm_bt").child("android.widget.LinearLayout").child("android.widget.RelativeLayout")[2].child("android.widget.TextView").click()
 poco(text="挖掘").click()
+sleep(5)
 poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
 
 #touch(Template(r"tpl1536574335547.png", record_pos=(0.433, -0.756), resolution=(1440, 2560)))
