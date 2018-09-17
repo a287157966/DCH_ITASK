@@ -11,7 +11,9 @@ poco("com.iris.dch.itask:id/fragment_btm_bt").child("android.widget.LinearLayout
 poco(text="挖掘").click()
 poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
 
-#touch(Template(r"tpl1536574335547.png", record_pos=(0.433, -0.756), resolution=(1440, 2560)))
+
+#touch(Template(r"tpl1537183179553.png", record_pos=(0.436, -0.751), resolution=(720, 1280)))
+
 #touch([1360.5, 171.8])
 
 poco("com.iris.dch.itask:id/et_recommended_name").click()

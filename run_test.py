@@ -187,7 +187,7 @@ if __name__ == "__main__":
     #run_test(testcase,"4ae4ee5f")
     #JTJ4C15C15014538   ----   华为手机
     #4ae4ee5f   ------    vivo 手机
-    tit_html,bd_html = run_test(testcase,"JTJ4C15C15014538")
+    tit_html,bd_html = run_test(testcase,"4ae4ee5f")
     text = get_html(tit_html,bd_html)
     send_email(text)
 
