@@ -12,12 +12,12 @@ poco("com.iris.dch.itask:id/im_circle").click()
 poco(text="退出登录").click()
 txt =  ''
 try:
-    txt = poco(text="登 录").get_text()  
+    txt = poco(text="登录").get_text()
     print(u'txt:',txt)
 except BaseException as e:
     txt = ''
     print (u'未获取到元素:',e)
-assert_equal(txt,"登录","退出登录成功")
 
+assert_equal(txt,"登录","退出登录成功")
 config.teardown()
 

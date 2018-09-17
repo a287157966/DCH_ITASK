@@ -18,8 +18,8 @@ except BaseException as e:
 if txt1 == '登录':
     poco("com.iris.dch.itask:id/et_login_user").click()
     #text("auto_test")
-    text(config.login_user())
-    poco("com.iris.dch.itask:id/et_login_psw").set_text(config.login_pwd())
+    text(config.get_dch_config('itask_username'))
+    poco("com.iris.dch.itask:id/et_login_psw").set_text(config.get_dch_config('itask_password'))
     #text("111111")
     #不同手机要用set_text 和 text() 两个方法来实现，坑爹啊
     #text(config.login_pwd())
@@ -34,8 +34,8 @@ else:
     poco("com.iris.dch.itask:id/tv_menu_tuichu").click()
     poco("com.iris.dch.itask:id/et_login_user").click()
     #text("auto_test")
-    text(config.login_user())
-    poco("com.iris.dch.itask:id/et_login_psw").set_text(config.login_pwd())
+    text(config.get_dch_config('itask_username'))
+    poco("com.iris.dch.itask:id/et_login_psw").set_text(config.get_dch_config('itask_password'))
     #text("111111")
     #text(config.login_pwd())
     keyevent("Enter")
