@@ -18,7 +18,7 @@ poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[1].click()
 jiaoqiangxian_zongjia = poco("com.iris.dch.itask:id/tv_input_jiaoqiangxian_zongjia").get_text()
 #首年商业险总价
 sounian_shangyexian_zongjia = poco("com.iris.dch.itask:id/tv_input_sounian_shangyexian_zongjia").get_text()
-assert_equal(jiaoqiangxian_zongjia,"5,100.00","交强险金额校验通过")
+assert_equal(jiaoqiangxian_zongjia,"5,000.00","交强险金额校验通过")
 assert_equal(sounian_shangyexian_zongjia,"7,500.00","商业险总价校验通过")
 
 

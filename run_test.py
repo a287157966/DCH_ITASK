@@ -11,6 +11,10 @@ import time
 def get_path():
     proDir = os.path.split(os.path.realpath(__file__))[0]
     return proDir
+#返回时间戳
+def get_time():
+    local_time = time.strftime("%Y%m%d%H%M%S",time.localtime())
+    return local_time
 #运行脚本
 def run_test(testcase=[],*devices):
     devices_list = list(devices)
@@ -26,7 +30,7 @@ def run_test(testcase=[],*devices):
             report_path = "D:\\apache-tomcat-8.5.33\\webapps\\DCH_Report" #定义Tomcat路径
             #report_path = os.path.join(base_path,'report') #获取本地测试报告路径,发送邮件时不适用
             case_name = case.split('.')[0]
-            report_name = case_name+'_report'
+            report_name = case_name+'_'+get_time()+'_report'
             outfile = os.path.join(report_path,case_name) + '.html'
             implement_case = 'airtest run ' + test_case + ' --device Android:///'+ dev + ' --log ' + report_path
             implement_report = 'airtest report ' + test_case + ' --log_root ' + report_path + ' --outfile ' + outfile
@@ -57,9 +61,6 @@ def run_test(testcase=[],*devices):
     success_rate = str('%.2f'%(((float(count_case)-float(failed_case))/float(count_case))*100))+'%'
     title_html = '<tr style="text-align:center;"><td>%s</td><td>%s</td><td>%s</td></tr>' %(count_case,failed_case,success_rate)
     return title_html,body_html
-
-
-
 
 #获取测试报告文件
 def get_report_file():
@@ -193,4 +194,5 @@ if __name__ == "__main__":
     tit_html,bd_html = run_test(testcase,"4ae4ee5f")
     text = get_html(tit_html,bd_html)
     send_email(text)
+    #get_time()
 
