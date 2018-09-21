@@ -150,7 +150,7 @@ def send_email(text):
     sender = 'wentao.chen@iris-technologies.com.cn'
     # receivers = ['wentao.chen@iris-technologies.com.cn','zhiyi.you@iris-technologies.com.cn','jun.wei@iris-technologies.com.cn',
     #              'wanying.ba@iris-technologies.com.cn','feng.li@iris-technologies.com.cn']
-    receivers = ['wentao.chen@iris-technologies.com.cn']
+    receivers = ['wentao.chen@iris-technologies.com.cn','zhiyi.you@iris-technologies.com.cn']
     username = 'wentao.chen@iris-technologies.com.cn'
     password = 'iris123'
     mail_port = 25
