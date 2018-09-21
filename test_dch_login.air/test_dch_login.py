@@ -1,19 +1,19 @@
 # -*- encoding=utf8 -*-
 __author__ = "chenwt"
-
+from dch_common import config
 from airtest.core.api import *
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
-from dch_common import config
-auto_setup(__file__)
 try:
-    config.setup()
+    poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 except IndexError as e:
     with open("D:\\apache-tomcat-8.5.33\\webapps\\DCH_Report\\log.txt",'r+') as f:
         f.truncate()
         f.close()
     print("可能未连接到设备，请检查是否连接:",e)
 
+auto_setup(__file__)
+
+config.setup()
 start_app("com.iris.dch.itask")
 sleep(5)
 txt1 = ''
