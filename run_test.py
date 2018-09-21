@@ -29,7 +29,7 @@ def run_test(testcase=[],*devices):
             test_case = os.path.join(base_path,case)
             report_path = "D:\\apache-tomcat-8.5.33\\webapps\\DCH_Report" #定义Tomcat路径
             #report_path = os.path.join(base_path,'report') #获取本地测试报告路径,发送邮件时不适用
-            case_name = case.split('.')[0]
+            case_name = case.split('.')[0]+get_time()
             report_name = case_name+'_'+get_time()+'_report'
             outfile = os.path.join(report_path,case_name) + '.html'
             implement_case = 'airtest run ' + test_case + ' --device Android:///'+ dev + ' --log ' + report_path
@@ -146,9 +146,9 @@ def send_email(text):
     report_list = get_report_file()
     mail_host = 'smtp.hostuc.com'
     sender = 'wentao.chen@iris-technologies.com.cn'
-    receivers = ['wentao.chen@iris-technologies.com.cn','zhiyi.you@iris-technologies.com.cn','jun.wei@iris-technologies.com.cn',
-                 'wanying.ba@iris-technologies.com.cn','feng.li@iris-technologies.com.cn']
-    # receivers = ['wentao.chen@iris-technologies.com.cn']
+    # receivers = ['wentao.chen@iris-technologies.com.cn','zhiyi.you@iris-technologies.com.cn','jun.wei@iris-technologies.com.cn',
+    #              'wanying.ba@iris-technologies.com.cn','feng.li@iris-technologies.com.cn']
+    receivers = ['wentao.chen@iris-technologies.com.cn']
     username = 'wentao.chen@iris-technologies.com.cn'
     password = 'iris123'
     mail_port = 25
@@ -185,8 +185,8 @@ if __name__ == "__main__":
 
     #print(get_path())
     testcase = ['test_dch_login.air','test_dch_mining_clues.air','test_dch_no_clue_store.air','test_dch_finance.air',
-               'test_dch_insurance.air','test_dch_submit_order.air','test_dch_tools_finance.air','test_dch_tools_insurance.air',
-                'test_dch_logout.air']
+               'test_dch_insurance.air','test_dch_submit_order.air','test_dch_cuedpool_serach.air','test_dch_tools_finance.air',
+                'test_dch_tools_insurance.air','test_dch_logout.air']
     #testcase = ['test_dch_login.air']
     #run_test(testcase,"4ae4ee5f")
     #JTJ4C15C15014538   ----   华为手机

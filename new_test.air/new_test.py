@@ -14,3 +14,8 @@ auto_setup(__file__)
 # keyevent("DPAD_UP")
 poco("com.iris.dch.itask:id/title").child("android.widget.TextView")[0].click()
 poco("com.iris.dch.itask:id/open").click()
+touch(Template(r"tpl1537414963336.png", record_pos=(-0.444, -0.787), resolution=(720, 1280)))
+poco("com.iris.dch.itask:id/et_login_user").click()
+text("hjhjhj")
+
+
