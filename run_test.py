@@ -45,8 +45,8 @@ def run_test(testcase=[],*devices):
             #print(open_url)
             respone = urllib.request.urlopen(open_url)
             respone_txt = respone.read().decode('utf-8')
-            sigin = 'Null'
-            if 'Passed' in respone_txt:
+            sigin = 'Null_Devices'
+            if 'Passed' in respone_txt and 'I am sorry, this log file is empty!' not in respone_txt:
                 sigin = 'Pass'
                 tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:green;">%s</span></td></tr>' %(case_name_tianchong,send_url,report_name,sigin)
                 body_html += tb_html
@@ -58,6 +58,7 @@ def run_test(testcase=[],*devices):
             else:
                 tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:yellow;">%s</span></td></tr>' %(case_name_tianchong,send_url,report_name,sigin)
                 body_html += tb_html
+                failed_case += 1
 
     success_rate = str('%.2f'%(((float(count_case)-float(failed_case))/float(count_case))*100))+'%'
     title_html = '<tr style="text-align:center;"><td>%s</td><td>%s</td><td>%s</td></tr>' %(count_case,failed_case,success_rate)
