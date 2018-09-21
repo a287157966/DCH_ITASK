@@ -29,8 +29,9 @@ def run_test(testcase=[],*devices):
             test_case = os.path.join(base_path,case)
             report_path = "D:\\apache-tomcat-8.5.33\\webapps\\DCH_Report" #定义Tomcat路径
             #report_path = os.path.join(base_path,'report') #获取本地测试报告路径,发送邮件时不适用
+            case_name_tianchong = case.split('.')[0]
             case_name = case.split('.')[0]+get_time()
-            report_name = case_name+'_'+get_time()+'_report'
+            report_name = case_name+'_report'
             outfile = os.path.join(report_path,case_name) + '.html'
             implement_case = 'airtest run ' + test_case + ' --device Android:///'+ dev + ' --log ' + report_path
             implement_report = 'airtest report ' + test_case + ' --log_root ' + report_path + ' --outfile ' + outfile
@@ -47,15 +48,15 @@ def run_test(testcase=[],*devices):
             sigin = 'Null'
             if 'Passed' in respone_txt:
                 sigin = 'Pass'
-                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:green;">%s</span></td></tr>' %(case_name,send_url,report_name,sigin)
+                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:green;">%s</span></td></tr>' %(case_name_tianchong,send_url,report_name,sigin)
                 body_html += tb_html
             elif 'Failed' in respone_txt:
                 sigin = 'Failed'
-                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:red;">%s</span></td></tr>' %(case_name,send_url,report_name,sigin)
+                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:red;">%s</span></td></tr>' %(case_name_tianchong,send_url,report_name,sigin)
                 body_html += tb_html
                 failed_case += 1
             else:
-                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:yellow;">%s</span></td></tr>' %(case_name,send_url,report_name,sigin)
+                tb_html = '<tr><td style="width: 150px;margin-left:180px;height:30px;text-align:center;">%s</td><td style="width: 500px;"><a href="%s" target=_blank>%s</a></td><td style="width:150px;margin-left:180px;text-align:center;"><span style="color:yellow;">%s</span></td></tr>' %(case_name_tianchong,send_url,report_name,sigin)
                 body_html += tb_html
 
     success_rate = str('%.2f'%(((float(count_case)-float(failed_case))/float(count_case))*100))+'%'
